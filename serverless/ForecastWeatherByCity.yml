@@ -1,0 +1,8 @@
+ForecastWeatherByCity:
+  handler: Handlers/ForecastWeatherHandler.forecast_weather_by_city
+  timeout: ${self:custom.timeout}
+  events:
+    - http:
+        path: /forecast-weather-by-city
+        method: get
+        cors: ${self:custom.cors}

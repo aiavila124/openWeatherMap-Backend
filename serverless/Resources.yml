@@ -1,0 +1,35 @@
+Cities:
+  handler: Handlers/ResourcesHandler.cities
+  timeout: ${self:custom.timeout}
+  events:
+    - http:
+        path: /resources/cities
+        method: get
+        cors: ${self:custom.cors}
+
+States:
+  handler: Handlers/ResourcesHandler.states
+  timeout: ${self:custom.timeout}
+  events:
+    - http:
+        path: /resources/states
+        method: get
+        cors: ${self:custom.cors}
+
+Countries:
+  handler: Handlers/ResourcesHandler.countries
+  timeout: ${self:custom.timeout}
+  events:
+    - http:
+        path: /resources/countries
+        method: get
+        cors: ${self:custom.cors}
+
+Icons:
+  handler: Handlers/ResourcesHandler.icons
+  timeout: ${self:custom.timeout}
+  events:
+    - http:
+        path: /resources/icons
+        method: get
+        cors: ${self:custom.cors}
